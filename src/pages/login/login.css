@@ -64,7 +64,7 @@ form p {
     font-weight: lighter;
 }
 
-form p a {
+form p #signupLink {
     color: #bbadff;
     font-weight: bold;
     cursor: pointer;

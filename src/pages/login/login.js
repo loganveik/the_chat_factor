@@ -1,5 +1,6 @@
 import './login.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import loginImg from '../../images/login-undraw.svg';
 
 function loginPage() {
@@ -13,7 +14,7 @@ function loginPage() {
                 <div className="form">
                     <form>
                         <h1>Login.</h1>
-                        <p>Don't have an account? <a>Sign Up</a></p>
+                        <p>Don't have an account? <Link id='signupLink' to='/signup'>Sign Up</Link></p>
                         <div className="input-group">
                             <label>Email</label>
                             <input type="email" />
