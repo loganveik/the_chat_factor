@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/' component={}/>
-        <Route path='/signup' component={}/>
-        <Route path='create' component={}/>
-        <Route path='library' component={}/>
+        <Route exact path='/' component={loginPage}/>
+        {/* <Route path='/signup' component={signupPage}/>
+        <Route path='create' component={createPage}/>
+        <Route path='library' component={libraryPage}/> */}
       </Switch>
     </div>
   );
