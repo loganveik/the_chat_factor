@@ -1,6 +1,6 @@
-html {
+/* html {
     background-color: #baacff;
-}
+} */
 
 .signup-container {
     width: 100%;
@@ -8,6 +8,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #baacff;
 }
 
 .signup {

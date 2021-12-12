@@ -46,7 +46,7 @@ function LoginPage() {
             <div className="login">
                 <div className="info">
                     <img src={loginImg} />
-                    <h2>Login to view thousands of recipes.</h2>
+                    <h2>Login to start chatting.</h2>
                 </div>
                 <div className="login-form">
                     <form>
