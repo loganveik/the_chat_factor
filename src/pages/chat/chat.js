@@ -1,5 +1,5 @@
 import './chat.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import { auth, db } from '../../firebase';
 import { signOut } from 'firebase/auth';
@@ -10,6 +10,8 @@ function ChatPage() {
     const [message, setMessage] = useState('');
     const user = auth.currentUser;
     const history = useHistory();
+
+    const dummy = useRef();
 
     const logout = () => {
         signOut(auth)
@@ -40,6 +42,7 @@ function ChatPage() {
         addDoc(collectionRef, payLoad)
             .then(() => setMessage(''))
             .catch((e) => alert(e.message))
+            .finally(() => dummy.current.scrollIntoView({behavior: 'smooth'}))
     };
 
     return (
@@ -57,7 +60,7 @@ function ChatPage() {
                         <p>{message.message}</p>
                     </div>
                 ))}
-
+                <div ref={dummy}></div>
             </div>
             <div className="input">
                 <input value={message} onChange={(e) => setMessage(e.target.value)} required placeholder="Send a message" />
