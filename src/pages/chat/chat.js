@@ -45,7 +45,8 @@ function ChatPage() {
     return (
         <>
             <nav>
-                <h1>{user && user.displayName}</h1>
+                <h3 id="display_name">Welcome, {user && user.displayName}</h3>
+                <h1 id="logo">The Chat Factor.</h1>
                 <a onClick={logout}>Logout</a>
             </nav>
             <div className="create-container">

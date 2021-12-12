@@ -15,10 +15,24 @@ nav {
     /* position: relative; */
 }
 
+#logo {
+    color: #baacff;
+}
+
 nav a {
     position: absolute;
     right: 30px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #baacff;
+}
+
+#display_name {
+    position: absolute;
+    left: 30px;
 }
 
 .create-container {
@@ -98,11 +112,28 @@ nav a {
     cursor: pointer;
 }
 
-.input button:hover {
-    border: 1px solid black;
-}
+/* .input button:hover {
+    border: 1px solid white;
+} */
 
 #send-icon {
     font-size: 20px;
     color: white;
+}
+
+@media (max-width: 900px) {
+    #display_name {
+        display: none;
+    }
+
+    #logo {
+        position: absolute;
+        left: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .input input {
+        width: 80%;
+    }
 }
