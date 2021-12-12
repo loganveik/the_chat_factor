@@ -2,7 +2,7 @@ html {
     background-color: #baacff;
 }
 
-.container {
+.signup-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@ html {
     align-items: center;
 }
 
-.login {
+.signup {
     display: flex;
     width: 70%;
     height: 80%;
@@ -20,7 +20,7 @@ html {
     overflow: hidden;
 }
 
-.info {
+.signup .info {
     background-color: #e0c4ff;
     height: 100%;
     width: 50%;
@@ -30,11 +30,11 @@ html {
     align-items: center;
 }
 
-.info img {
+.signup .info img {
     width: 80%;
 }
 
-.info h2 {
+.signup .info h2 {
     color: white;
     text-align: center;
     margin: 1.5rem 0 0;
@@ -43,7 +43,7 @@ html {
     font-weight: 400;
 }
 
-.form {
+.signup-form {
     height: 100%;
     width: 50%;
     display: flex;
@@ -51,44 +51,44 @@ html {
     align-items: center;
 }
 
-form {
+.signup-form form {
     width: 70%;
 }
 
-form h1 {
+.signup-form form h1 {
     margin: 0.5rem 0;
 }
 
-form p {
+.signup-form form p {
     color: #afafaf;
     font-weight: lighter;
 }
 
-form p #loginLink {
+.signup-form form p #loginLink {
     color: #bbadff;
     font-weight: bold;
     cursor: pointer;
 }
 
-form p a:hover {
+.signup-form form p a:hover {
     text-decoration: underline;
 }
 
-.input-group, .button-group {
+.signup-input-group, .signup-button-group {
     width: 100%;
 }
 
-.input-group {
+.signup-input-group {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-.input-group label {
+.signup-input-group label {
     margin: 0.5rem 0;
 }
 
-.input-group input {
+.signup-input-group input {
     border: none;
     padding: 0.75rem;
     border: 1px solid #bbbbbb;
@@ -96,15 +96,15 @@ form p a:hover {
     outline: none;
 }
 
-.input-group input:focus {
+.signup-input-group input:focus {
     border: 1px solid #baacff;
 }
 
-.button-group {
+.signup-button-group {
     margin: 1.5rem 0;
 }
 
-.button-group button {
+.signup-button-group button {
     outline: none;
     border: none;
     width: 100%;
@@ -117,28 +117,28 @@ form p a:hover {
     transition: 0.25s;
 }
 
-.button-group button:hover {
+.signup-button-group button:hover {
     background-color: #a795ff;
 }
 
 @media(max-width: 850px) {
-    .info {
+    .signup .info {
         display: none;
     }
-    .form {
+    .signup-form {
         width: 100%;
     }
-    form {
+    .signup-form form {
         width: 80%;
     }
-    .login {
+    .signup {
         align-items: center;
         justify-content: center;
     }
 }
 
 @media(max-width: 500px) {
-    form {
+    .signup-form form {
         width: 80%;
     }
 }

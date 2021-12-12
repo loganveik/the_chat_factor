@@ -1,18 +1,28 @@
 import './App.css';
+import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import loginPage from './pages/login/login';
-import signupPage from './pages/signup/signup';
-import createPage from './pages/create/create';
-import libraryPage from './pages/library/library';
+import LoginPage from './pages/login/login';
+import SignupPage from './pages/signup/signup';
+import ChatPage from './pages/chat/chat';
+import { auth } from './firebase';
+import { onAuthStateChanged } from '@firebase/auth';
 
 function App() {
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, user => {
+      setUser(user)
+    })
+  }, [])
+
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/' component={loginPage}/>
-        <Route path='/signup' component={signupPage}/>
-        {/* <Route path='create' component={createPage}/> */}
-        <Route path='/library' component={libraryPage}/>
+        <Route exact path='/' component={LoginPage} />
+        <Route path='/signup' component={SignupPage} />
+        <Route path='/chat' component={ChatPage} />
       </Switch>
     </div>
   );

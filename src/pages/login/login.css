@@ -2,7 +2,7 @@ html {
     background-color: #baacff;
 }
 
-.container {
+.login-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,7 +20,7 @@ html {
     overflow: hidden;
 }
 
-.info {
+.login .info {
     background-color: #e0c4ff;
     height: 100%;
     width: 50%;
@@ -30,11 +30,11 @@ html {
     align-items: center;
 }
 
-.info img {
+.login .info img {
     width: 80%;
 }
 
-.info h2 {
+.login .info h2 {
     color: white;
     text-align: center;
     margin: 1.5rem 0 0;
@@ -43,7 +43,7 @@ html {
     font-weight: 400;
 }
 
-.form {
+.login-form {
     height: 100%;
     width: 50%;
     display: flex;
@@ -51,44 +51,44 @@ html {
     align-items: center;
 }
 
-form {
+.login-form form {
     width: 70%;
 }
 
-form h1 {
+.login-form form h1 {
     margin: 0.5rem 0;
 }
 
-form p {
+.login-form form p {
     color: #afafaf;
     font-weight: lighter;
 }
 
-form p #signupLink {
+.login-form form p #signupLink {
     color: #bbadff;
     font-weight: bold;
     cursor: pointer;
 }
 
-form p a:hover {
+.login-form form p a:hover {
     text-decoration: underline;
 }
 
-.input-group, .button-group {
+.login-input-group, .login-button-group {
     width: 100%;
 }
 
-.input-group {
+.login-input-group {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-.input-group label {
+.login-input-group label {
     margin: 0.5rem 0;
 }
 
-.input-group input {
+.login-input-group input {
     border: none;
     padding: 0.75rem;
     border: 1px solid #bbbbbb;
@@ -96,18 +96,20 @@ form p a:hover {
     outline: none;
 }
 
-.input-group input:focus {
+.login-input-group input:focus {
     border: 1px solid #baacff;
 }
 
-.button-group {
+.login-button-group {
     margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-.button-group button {
+.login-button-group button {
     outline: none;
     border: none;
-    width: 100%;
+    width: 45%;
     padding: 0.7rem 0;
     border-radius: 5px;
     background-color: #baacff;
@@ -117,18 +119,18 @@ form p a:hover {
     transition: 0.25s;
 }
 
-.button-group button:hover {
+.login-button-group button:hover {
     background-color: #a795ff;
 }
 
 @media(max-width: 850px) {
-    .info {
+    .login .info {
         display: none;
     }
-    .form {
+    .login-form {
         width: 100%;
     }
-    form{
+    .login-form form{
         width: 80%;
     }
     .login{
@@ -138,7 +140,7 @@ form p a:hover {
 }
 
 @media(max-width: 500px){
-    form{
+    .login-form form{
         width: 80%;
     }
 }
