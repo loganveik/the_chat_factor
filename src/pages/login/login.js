@@ -54,14 +54,14 @@ function LoginPage() {
                         <p>Don't have an account? <Link id='signupLink' to='/signup'>Sign Up</Link></p>
                         <div className="login-input-group">
                             <label>Email</label>
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="login-input-group">
                             <label>Password</label>
-                            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <div className="login-button-group">
-                            <button type="submit" onClick={login}>Login</button>
+                            <button type="submit" onClick={email || password != '' ? login : null}>Login</button>
                             <button type="submit" onClick={demoLogin}>Demo</button>
                         </div>
                     </form>
