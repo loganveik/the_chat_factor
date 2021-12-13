@@ -5,7 +5,7 @@ Demo - [www.thechatfactor.com](www.thechatfactor.com)
 Repo - [https://github.com/loganveik/the_chat_factor](https://github.com/loganveik/the_chat_factor)
 
 ### Description:
-Once the user signs up and logs in, this app enters you into one big chatroom. You communicate with anyone else who has an account, about any topic imaginable.
+Once the user signs up and logs in, this app enters you into one big chatroom. You can communicate with anyone else who has an account, about any topic imaginable.
 
 ### Technologies Used:
 React, Firebase(auth/firestore), CSS, Javascript, Node, Express
