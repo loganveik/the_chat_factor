@@ -1,7 +1,3 @@
-/* html {
-    background-color: #baacff;
-} */
-
 .login-container {
     width: 100%;
     height: 100vh;
@@ -128,20 +124,23 @@
     .login .info {
         display: none;
     }
+
     .login-form {
         width: 100%;
     }
-    .login-form form{
+
+    .login-form form {
         width: 80%;
     }
-    .login{
+
+    .login {
         align-items: center;
         justify-content: center;
     }
 }
 
-@media(max-width: 500px){
-    .login-form form{
+@media(max-width: 500px) {
+    .login-form form {
         width: 80%;
     }
 }
